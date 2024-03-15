@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-color: #ff5733; /* Flashy background color */
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .player {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .player:hover {
+            transform: translateY(-10px); /* Add hover effect */
+        }
+        .player img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ffd700;
+        }
+        .player-info {
+            padding: 20px;
+        }
+        .player h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .player p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .schedule {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .schedule-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .schedule-item:hover {
+            transform: translateY(-5px); /* Add hover effect */
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Football Team</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#team">Meet the Team</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Our Football Team</h1>
+        <p>Join us for an exciting season!</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Insert brief overview of the team, history, mission, and values here.</p>
+    </section>
+
+    <section id="team" class="container">
+        <h2>Meet the Team</h2>
+        <div class="grid">
+            <div class="player">
+                <img src="player1.jpg" alt="Player 1">
+                <div class="player-info">
+                    <h3>Player 1</h3>
+                    <p>Position: Forward</p>
+                </div>
+            </div>
+            <!-- Repeat for other players -->
+        </div>
+    </section>
+
+    <section id="schedule" class="container">
+        <h2>Schedule and Results</h2>
+        <div class="schedule">
+            <div class="schedule-item">Upcoming Match: Team A vs. Team B, Date: XX/XX/XXXX</div>
+            <div class="schedule-item">Past Match: Team A vs. Team C, Result: 2-1</div>
+            <!-- Add more schedule items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us: example@email.com | Phone: 123-456-7890</p>
+    </footer>
+</body>
+</html>
